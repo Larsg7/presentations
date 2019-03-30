@@ -17,6 +17,7 @@ import {
   Table,
   TableRow,
   TableItem,
+  Link,
 } from 'spectacle';
 
 // Import theme
@@ -359,6 +360,25 @@ export default class Presentation extends React.Component {
           >
             Inheaden - Lars Gröber - 31/03/2019
           </div>
+        </Slide>
+        <Slide>
+          <Heading size={3}>Additional Resources</Heading>
+          <Text style={{ marginTop: '50px' }}>
+            <Link href="https://docs.cucumber.io/installation/">
+              Cucumber Docs
+            </Link>
+          </Text>
+
+          <Text>
+            <Link href="https://swagger.io/docs/specification/about/">
+              OpenAPI Docs
+            </Link>
+          </Text>
+          <Text>
+            <Link href="https://bdd-openapi-presentation.surge.sh">
+              This presentation
+            </Link>
+          </Text>
         </Slide>
       </Deck>
     );
